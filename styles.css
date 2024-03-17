@@ -1,51 +1,33 @@
 *{
-    justify-content: center;
-    align-items: center;
+    font-family: Poppins;
+
+}
+
+body{
+    background-color: #1d1d1d;
+
+}
+
+#header{
+    background-color: lightgreen !important;
+    border-radius: 14px 14px 50% 50%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
     
 }
 
-#header {
-    border-radius: 40px 120px 40px 70px;
-    background-color: rgb(43, 39, 37);
-    color: rgb(199, 197, 197);
-    
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: black 1px 1px 0px;
-    box-sizing: border-box;
-}
 
 
 main {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     position: relative;
+
 }
 
 
-img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: auto;    
-    filter:none;
-    z-index: -2;
-}
 
-.otro-circulo{
-    position: albolute;
-    border: solid 3px rgb(230, 6, 200);
-    background-color: transparent; 
-    clip-path: circle(50% at center); /* Crea una máscara de recorte circular */
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    margin-left: 250px !important;
-    margin-top: 130px;
-    filter: blur(10px);
-}
-
-.circle{
+.circle {
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -58,10 +40,7 @@ img{
     flex-direction: column;
 }
 
-.circle::before{
-    background-color: rgba(0, 0, 0, 0.5);
-    filter: blur(18px);
-    margin: 38px auto;
+.circle::before {
     content: '';
     border-radius: 50%;
     z-index: -1;
@@ -70,16 +49,14 @@ img{
     height: 160px;
     left: calc(50% - 80px);
     top: calc(50% - 80px);
-    background-color: black;
+    background-color: #242424;
 }
 
-.seconds-sphere{
-   
-    margin: 35px auto;
+.seconds-sphere {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: rgb(245, 239, 239);
+    background-color: #fff;
     position: absolute;
     left: calc(50% - 10px);
     top: calc(50% - 10px);
@@ -88,8 +65,8 @@ img{
 }
 
 @keyframes rotacion {
-    from { transform: rotate(-90deg) translateX(60px); }
-    to { transform: rotate(270deg) translateX(60px); }
+	from { 	transform: rotate(-90deg) translateX(60px); }
+	to   {  transform: rotate(270deg) translateX(60px); }
 }
 
 .buttons {
@@ -104,7 +81,7 @@ img{
     box-sizing: border-box;
     margin-left: 15px;
     border-color: transparent transparent transparent #fff;
-    transition: 10ms all ease;
+    transition: 100ms all ease;
     will-change: border-width;
     border-style: solid;
 }
@@ -112,7 +89,6 @@ img{
 .running {
     border-style: double;
     border-width: 0 0 0 10px;
-
 }
 
 .stop {
