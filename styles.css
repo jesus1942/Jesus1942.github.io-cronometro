@@ -1,6 +1,22 @@
+*{
+    justify-content: center;
+    align-items: center;
+}
+
+#header {
+    border-radius: 40px 120px 40px 70px;
+    background-color: rgb(43, 39, 37);
+    color: rgb(199, 197, 197);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: black 1px 1px 0px;
+}
+
+
 main {
     font-family: 'Poppins',sans-serif;
-    position: absolute;
+    position: relative;
+    
 }
 
 .circle{
@@ -17,6 +33,7 @@ main {
 }
 
 .circle::before{
+    margin: 35px auto;
     content: '';
     border-radius: 50%;
     z-index: -1;
@@ -25,10 +42,11 @@ main {
     height: 160px;
     left: calc(50% - 80px);
     top: calc(50% - 80px);
-    background-color: #1d1d1d;
+    background-color: black;
 }
 
 .seconds-sphere{
+    margin: 35px auto;
     width: 20px;
     height: 20px;
     border-radius: 50%;
